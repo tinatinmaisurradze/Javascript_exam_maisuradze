@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Task Manager</title>
+    <!-- ვაკავშირებთ CSS ფაილს -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        
+        <div class="task-form">
+            <input type="text" id="taskInput" placeholder="შეიყვანეთ ახალი დავალება...">
+            <button id="addBtn">დამატება</button>
+        </div>
+        
+        <div class="task-search">
+            <input type="text" id="searchInput" placeholder="მოძებნე დავალება...">
+
+            <select id="filter">
+                <option value="all">ყველა</option>
+                <option value="completed">შესრულებული</option>
+                <option value="notCompleted">შეუსრულებელი</option>
+            </select>
+
+            <button id="sortBtn">სორტირება</button>
+            
+            <button id="loadApiBtn">Load API</button>
+        </div>
+
+        <!-- აქ ჩაიყრება დავალებები ჯავასკრიპტიდან -->
+        <ul id="taskList"></ul>
+        
+    </div>
+    
+    <!-- ვაკავშირებთ JavaScript ფაილს -->
+    <script src="script.js"></script>
+</body>
+</html>
